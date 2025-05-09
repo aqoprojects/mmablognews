@@ -45,7 +45,7 @@ class BlogPost(models.Model):
     
     def publisher_image(self):
         try:
-            return 'img/mmamaster1.jpg'
+            return 'img/news-800x500-3.jpg'
         except:
             pass
 

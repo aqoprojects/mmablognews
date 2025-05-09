@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     {% if page_name == 'home' %}
-    <title>MMA Master 1 - N01 combat sport news website</title>
+    <title>Sport News - N01 combat sport news website</title>
     <meta property="og:title" content="MMA Master 1 - N01 combat sport news website">
     <meta property="og:description" content="Home of all combart Sport News">
     
@@ -25,15 +25,15 @@
 
     {% elif page_name == 'article' %}
 
-    <title>{{blog.topic}} - MMA master1</title>
-    <meta property="og:title" content="{{blog.topic}} - MMA master1">
+    <title>{{blog.topic}} - Sport News</title>
+    <meta property="og:title" content="{{blog.topic}} - Sport News">
     <meta property="og:description" content="{{blog.article|linebreaksbr}}">
     <meta property="og:image" content="{{request.get_host}}{{blog.topic_image.url}}">
     <meta property="og:type" content="{{request.get_host}}">
     <meta property="og:url" content="{{request.path}}">
     <meta property="twitter:card" content="{{request.get_host}}{{blog.topic_image.url}}">
     <meta property="twitter:site" content="@MMA_master_1">
-    <meta property="twitter:title" content="{{blog.topic}} - MMA master1">
+    <meta property="twitter:title" content="{{blog.topic}} - Sport News">
     <meta property="twitter:description" content="{{blog.article|linebreaksbr}}">
     <meta property="twitter:image" content="{{request.get_host}}{{blog.topic_image.url}}">
     {% else %}
@@ -121,8 +121,8 @@
         <div class="row align-items-center bg-white py-3 px-lg-5">
             <div class="col-lg-4">
                 <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
-                    <h1 class="m-0 display-4 text-uppercase text-primary">MMA<span
-                            class="text-secondary font-weight-normal">Master1</span></h1>
+                    <h1 class="m-0 display-4 text-uppercase text-primary">Sport<span
+                            class="text-secondary font-weight-normal">News</span></h1>
                 </a>
             </div>
             <div class="col-lg-8 text-center text-lg-right">
