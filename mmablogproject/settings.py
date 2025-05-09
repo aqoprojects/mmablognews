@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import dj_database_url
 from pathlib import Path
+from decouple import config
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -18,11 +19,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-SECRET_KEY = 'django-insecure-^ta+mpm+$m5r-ph7eb03u+^f0kb_=0^9(!)n&pq0z*td$a+4(h'
+SECRET_KEY = config("SECRET_KEY")
 
-DEBUG = True
+DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = ['mmablog.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = config("ALLOWED_HOST").split(",")
 
 
 # Application definition
@@ -81,7 +82,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.parse("postgresql://mm1:YiinZYPiUJHw2HAeuFOWqViFojzQlBxR@dpg-d0ev3a6mcj7s7389c6o0-a.oregon-postgres.render.com/mmablog_3svi")
+DATABASES['default'] = dj_database_url.parse(config("DATABASE_URL"))
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
