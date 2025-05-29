@@ -1,3 +1,4 @@
+from.CustomUserModel import CustomUser
 from .BlogCategoryModel import BlogCategory
 from .BlogCommentModel import BlogComment
 from .BlogContactUsModel import BlogContact

@@ -82,9 +82,9 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.parse(config("DATABASE_URL"))
+# DATABASES['default'] = dj_database_url.parse("postgresql://mm1:YiinZYPiUJHw2HAeuFOWqViFojzQlBxR@dpg-d0ev3a6mcj7s7389c6o0-a.oregon-postgres.render.com/mmablog_3svi")
 
-# Password validation
+# Password validationconfig("DATABASE_URL")
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -132,3 +132,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'mmablog.CustomUser'

@@ -528,6 +528,13 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  
+  background-size: contain;
+}
+
+.small-img-fluid {
+  max-height: 90%;
+  width: auto;
 }
 
 .img-thumbnail {

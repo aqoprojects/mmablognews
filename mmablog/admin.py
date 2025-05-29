@@ -1,5 +1,10 @@
 from django.contrib import admin
-from .models import BlogCategory,BlogComment, BlogContact, BlogPost, BlogSubPost,BlogViewCount
+from .models import BlogCategory,BlogComment, BlogContact, BlogPost, BlogSubPost,BlogViewCount, CustomUser
+
+
+# class CustomUserAdmin(admin.AdminSite):
+#     pass
+
 
 class BlogCatgoryDisplayTable(admin.ModelAdmin):
     list_display = ['name', 'added_date', 'updated_date']
@@ -21,7 +26,7 @@ class BlogPostCommentDisplayTable(admin.ModelAdmin):
 
 
 
-
+admin.site.register(CustomUser)
 admin.site.register(BlogSubPost, BloGSubPostDisplayTable)
 admin.site.register(BlogCategory, BlogCatgoryDisplayTable)
 admin.site.register(BlogComment,BlogPostCommentDisplayTable)
