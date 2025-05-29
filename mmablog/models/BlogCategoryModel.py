@@ -8,7 +8,7 @@ class BlogCategory(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
     
     class Meta:
-        db_tablespace = 'BCtableIndexStorage'
+        # db_tablespace = 'BCtableIndexStorage'
         
         indexes = [models.Index(fields=['name'])]    
     

@@ -12,11 +12,11 @@ def BlogEntries(apps, scheme_eiditor):
     publisher = author
 
     # Category instances
-    wwe = BlogCategory.objects.get(name="wwe")
-    tna = BlogCategory.objects.get(name="tna")
-    aew = BlogCategory.objects.get(name="aew")
+    wwe, created = BlogCategory.objects.get_or_create(name="wwe")
+    tna, created = BlogCategory.objects.get_or_create(name="tna")
+    aew, created = BlogCategory.objects.get_or_create(name="aew")
     # football = BlogCategory.objects.get(name="football")
-    njpw = BlogCategory.objects.get(name="njpw")
+    njpw, created = BlogCategory.objects.get_or_create(name="njpw")
 
     blogs = [
         {

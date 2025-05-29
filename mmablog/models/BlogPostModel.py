@@ -25,7 +25,7 @@ class BlogPost(models.Model):
     #         FileExtensionValidator(allowed_extensions=['jpeg', 'jpg', 'png']),
     #     ],)
     topic = models.CharField(max_length=250, null=True, blank=True)
-    slug = models.SlugField(null=True, blank=True)
+    slug = models.SlugField(max_length=100, null=True, blank=True)
     article = models.TextField(null=True,blank=True)
     total_clicks = models.BigIntegerField(default=0)
     total_comments = models.BigIntegerField(default=0)    
