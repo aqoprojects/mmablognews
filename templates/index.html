@@ -184,7 +184,7 @@
                             </div>
                             <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle mr-2" src="{% static blog.publisher_image %}" width="25" height="25" alt="mmamaster1">
+                                    <img class="rounded-circle mr-2" src="{{blog.publisher.profile_picture.url}}" width="25" height="25" alt="mmamaster1">
                                     <small>{{blog.publisher.username}}</small>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -220,7 +220,7 @@
                             </div>
                             <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle mr-2" src="{% static blog.publisher_image %}" width="25" height="25" alt="mmamaster1">
+                                    <img class="rounded-circle mr-2" src="{{blog.publisher.profile_picture.url}}" width="25" height="25" alt="mmamaster1">
                                     <small>{{blog.publisher.username}}</small>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -276,7 +276,7 @@
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border-top mt-auto p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="{% static blog.publisher_image %}" width="25" height="25"
+                                        <img class="rounded-circle mr-2" src="{{blog.publisher.profile_picture.url}}" width="25" height="25"
                                             alt="mmamaster1">
                                         <small>{{blog.publisher.username}}</small>
                                     </div>
