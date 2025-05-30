@@ -8,7 +8,12 @@ def BlogEntries(apps, scheme_eiditor):
     content_type = ContentType.objects.get_for_model(BlogPost)
 
     # Sample users for author and publisher
-    author =  get_user_model().objects.get(username="user")
+    author, created =  get_user_model().objects.get_or_create(username="user", email='user')
+    if created:
+        author.set_password("user")
+        author.is_superuser = True
+        author.is_active = True
+        author.save()
     publisher = author
 
     # Category instances

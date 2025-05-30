@@ -14,7 +14,7 @@ class BlogComment(models.Model):
     ip_information = models.JSONField(null=True,blank=True)
     
     class Meta:
-        db_tablespace = 'BCMtableIndexStorage'
+        # db_tablespace = 'BCMtableIndexStorage'
         
         indexes = [models.Index(fields=['name', 'message', 'comment_date'])]    
     def __str__(self):

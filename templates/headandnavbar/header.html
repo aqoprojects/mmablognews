@@ -9,17 +9,17 @@
 
     {% if page_name == 'home' %}
     <title>Sport News - N01 combat sport news website</title>
-    <meta property="og:title" content="MMA Master 1 - N01 combat sport news website">
+    <meta property="og:title" content="SPort News - N01 combat sport news website">
     <meta property="og:description" content="Home of all combart Sport News">
     
-    <meta property="og:image" content="{% static 'img/mmamaster1.jpg' %}">
+    <meta property="og:image" content="{% static 'img/news-700x435-2.jpg' %}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{request.get_host}}{% static 'img/mmamaster1.jpg' %}">
+    <meta property="og:url" content="{{request.get_host}}{% static 'img/news-700x435-2.jpg' %}">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:site" content="@MMA_master_1">
-    <meta property="twitter:title" content="MMA Master 1 - N01 combat sport news website">
+    <meta property="twitter:site" content="@sportnews">
+    <meta property="twitter:title" content="sport news - N01 combat sport news website">
     <meta property="twitter:description" content="Home of all combart Sport News">
-    <meta property="twitter:image" content="{{request.get_host}}{% static 'img/mmamaster1.jpg' %}">
+    <meta property="twitter:image" content="{{request.get_host}}{% static 'img/news-700x435-2.jpg' %}">
 
 
 
@@ -32,28 +32,28 @@
     <meta property="og:type" content="{{request.get_host}}">
     <meta property="og:url" content="{{request.path}}">
     <meta property="twitter:card" content="{{request.get_host}}{{blog.topic_image.url}}">
-    <meta property="twitter:site" content="@MMA_master_1">
+    <meta property="twitter:site" content="@sportnews">
     <meta property="twitter:title" content="{{blog.topic}} - Sport News">
     <meta property="twitter:description" content="{{blog.article|linebreaksbr}}">
     <meta property="twitter:image" content="{{request.get_host}}{{blog.topic_image.url}}">
     {% else %}
-    <title>MMA Master 1 - {{category}} News</title>
-    <meta property="og:title" content="MMA Master 1 - {{category}} News">
+    <title>Sport News - {{category}} News</title>
+    <meta property="og:title" content="SportNews - {{category}} News">
     <meta property="og:description" content="{{category}} News, Breaking New, what's happening">
 
-    <meta property="og:image" content="{{request.get_host}}{% static 'img/mmamaster1.jpg' %}">
+    <meta property="og:image" content="{{request.get_host}}{% static 'img/news-700x435-2.jpg' %}">
     <meta property="og:type" content="{{request.get_host}}">
     <meta property="og:url" content="{{request.path}}">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:site" content="@MMA_master_1">
+    <meta property="twitter:site" content="@sportnews">
     <meta property="twitter:title" content="{{category}} Breaking News">
     <meta property="twitter:description" content="{{category}} News, Breaking New, what's happening">
-    <meta property="twitter:image" content="{{request.get_host}}{% static 'img/mmamaster1.jpg' %}">
+    <meta property="twitter:image" content="{{request.get_host}}{% static 'img/news-700x435-2.jpg' %}">
     {% endif %}
 
 
     <!-- Favicon -->
-    <link href="{% static 'img/mmamaster1.jpg' %}" rel="icon">
+    <link href="{% static 'img/news-700x435-2.jpg' %}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">

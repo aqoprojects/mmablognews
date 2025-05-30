@@ -35,7 +35,7 @@ class BlogPost(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
     
     class Meta:
-        db_tablespace = 'BPtableIndexStorage'
+        # db_tablespace = 'BPtableIndexStorage'
         
         indexes = [models.Index(fields=['topic_image', 'topic', 'article', 'posted_date'])]    
     

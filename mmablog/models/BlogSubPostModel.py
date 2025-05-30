@@ -26,7 +26,7 @@ class BlogSubPost(models.Model):
     
     class Meta:
         ordering = ['-topic_image']
-        db_tablespace = 'BSPtableIndexStorage'
+        # db_tablespace = 'BSPtableIndexStorage'
         
         indexes = [models.Index(fields=['topic_image', 'topic', 'article', 'posted_date'])]    
     
